@@ -1,0 +1,77 @@
+@import 'tailwindcss';
+@import '@fontsource-variable/fraunces/full.css';
+@import '@fontsource/karla/400.css';
+@import '@fontsource/karla/500.css';
+@import '@fontsource/karla/700.css';
+
+@theme {
+  --color-barro: #8a5a44;
+  --color-arena: #d8c9b6;
+  --color-crema: #f6f1ea;
+  --color-carbon: #3a3531;
+  --color-esmalte: #5e7a70;
+  --font-serif: 'Fraunces Variable', Georgia, serif;
+  --font-sans: 'Karla', system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    background: var(--color-crema);
+    color: var(--color-carbon);
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    font-family: var(--font-sans);
+    min-width: 320px;
+  }
+  .font-serif {
+    font-variation-settings: 'SOFT' 100;
+  }
+  :focus-visible {
+    outline: 3px solid var(--color-esmalte);
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  .papel {
+    background: #fff url('/texturas/papel.webp') center / cover;
+  }
+  .hormigon {
+    background: var(--color-barro) url('/texturas/hormigon.webp') center / cover;
+  }
+  /* Botón de trazo: el estilo base de todos los botones de la app */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 48px;
+    padding: 0 1.25rem;
+    border-radius: 999px;
+    border: 2px solid var(--color-barro);
+    background: transparent;
+    color: var(--color-barro);
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.15s;
+  }
+  .btn:hover:not(:disabled) {
+    background: color-mix(in srgb, var(--color-barro) 8%, transparent);
+  }
+  .btn:disabled {
+    border-color: transparent;
+    background: color-mix(in srgb, var(--color-barro) 20%, transparent);
+    cursor: not-allowed;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+    scroll-behavior: auto !important;
+  }
+}
