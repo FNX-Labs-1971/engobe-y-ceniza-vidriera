@@ -19,7 +19,7 @@ Datos usados: los sintéticos de `src/data/hornada.js` y correos de `example.com
 | 7a | Los datos siguen ahí al recargar | Tras apartar y sumar un Florero, se recarga: siguen las unidades descontadas, la lista y lo escrito en el formulario. | ✅ · ✅ |
 | 7b | Las dos pantallas se usan bien a 360 px | En Hornada y Mi lista: sin desborde horizontal (`scrollWidth` = ancho de pantalla) y todos los botones, enlaces y campos miden al menos 44 × 44 px. Revisión visual con capturas. | ✅ · ✅ |
 | 7c | El caso resuelto se reproduce y da el resultado indicado | Ver «Caso resuelto» abajo. | ✅ · ✅ |
-| 8 | Repositorio o Lovable compartido, README y URL de previsualización | Se completa en la Fase 5 (entrega). | ⏳ pendiente |
+| 8 | Repositorio o Lovable compartido, README y URL de previsualización | Repositorio privado `FNX-Labs-1971/engobe-y-ceniza-vidriera` con README. URL publicada https://fnx-ec-vidriera.netlify.app comprobada el 17/11: carga sin errores, el caso resuelto da $60.000 y Jarra «Queda una sola», no hay desborde a 360 px y responde con `X-Robots-Tag: noindex, nofollow`. | ✅ (falta la invitación a partners@kodarvia.com) |
 
 ## Caso resuelto del briefing
 

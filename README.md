@@ -136,6 +136,9 @@ python pruebas/criterios.py http://localhost:4173/
 
 ## Despliegue (Netlify)
 
+Previsualización: **https://fnx-ec-vidriera.netlify.app**. Cada push a `main` publica una versión nueva.
+
+
 `netlify.toml` ya está configurado: comando `npm run build` y carpeta `dist`.
 El sitio incluye `noindex` para que los buscadores no indexen la previsualización.
 
